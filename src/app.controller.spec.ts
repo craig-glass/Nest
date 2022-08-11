@@ -13,9 +13,9 @@ describe('AppController', () => {
   });
 
   describe('getHello', () => {
-    it('should return "Hello Universe!!"', () => {
+    it('should return "Hello Universe, this fucking works!!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getHello()).toBe('Hello Universe!!');
+      expect(appController.getHello()).toBe('Hello Universe, this fucking works!!');
     });
   });
 });
